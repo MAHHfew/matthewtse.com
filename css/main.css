@@ -1,0 +1,166 @@
+/* ===GENERAL STYLING=== */
+
+body {
+    font-family: Lato;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.matt-nav.right.hide-on-med-and-down {
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a:link {
+    color: #1f3a4d;
+    font-weight: 500;
+}
+
+#heading {
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+
+
+/* === LINKS === */
+
+.link-hover {
+    color: #248a6d;
+    text-shadow: 0 1px 0 #e7f9f4;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: solid;
+    position: relative;
+    transition: all 250ms;
+    z-index: 0;
+}
+
+.link-hover:before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    background: rgba(37, 124, 121, .16);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: height 250ms;
+}
+
+.link-hover:hover {
+    border-color: transparent;
+}
+
+.link-hover:hover:before {
+    height: 100%;
+}
+
+
+
+/* ===NAVIGATION=== */
+
+#nav {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+#nav ul li.active {
+    background-color: transparent;
+}
+
+#nav ul li.active a {
+    background-color: transparent;
+    border-bottom: 2px solid;
+    opacity: 0.5;
+}
+
+#nav ul li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid;
+    opacity: 0.5;
+}
+
+#nav a {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #1f3a4d;
+    padding: 0 1px;
+    margin: 0 15px;
+}
+
+.side-nav {
+    padding: 35px;
+}
+
+.nav-outer {
+    max-width: 86%;
+}
+
+
+/* ===SOCIAL ICONS=== */
+
+.icons-wrapper a {
+    padding-right: 1em;
+}
+
+.icons {
+    color: #34a0af;
+}
+
+.icons:hover {
+    color: #1d3a48;
+    opacity: 0.5;
+}
+
+
+/* ===INTRO=== */
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #1f3a4d;
+}
+
+h3 {
+    font-size: 45px;
+    letter-spacing: 0.6px;
+    color: #54595f;
+}
+
+#highlight {
+    font-weight: bold;
+    color: #1f3a4d;
+}
+
+
+/* ===FOOTER=== */
+
+.footer {
+    padding-bottom: 1em;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer-copyright {
+    color: #54595f;
+    opacity: 0.5;
+}
+
+.footer .row {
+    padding-top: 1em;
+}
