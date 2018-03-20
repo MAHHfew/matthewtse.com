@@ -4,10 +4,6 @@
       edge: "left",
   });
 
-  //  var elem = document.querySelector('.scrollspy');
-  //  var instance = new M.ScrollSpy(elem, {
-  //  });
-
   $(document).ready(function () {
       $('.scrollspy').scrollSpy();
   });
