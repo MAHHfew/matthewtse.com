@@ -1,7 +1,7 @@
 /* ===GENERAL STYLING=== */
 
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
